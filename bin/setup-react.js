@@ -45,7 +45,7 @@ async function setupReactProject() {
   }
 
   const templatePath = path.resolve(__dirname, "../", selectedTemplateDir);
-  console.log(`Resolved template path: ${templatePath}`);
+
   if (!fs.existsSync(templatePath)) {
     console.error(`Template folder "${selectedTemplateDir}" does not exist.`);
     return;
@@ -58,10 +58,6 @@ async function setupReactProject() {
   });
 
   const targetDir = path.resolve(process.cwd(), projectName);
-
-  console.log(
-    `Setting up React project from the "${selectedTemplateDir}" template...`
-  );
 
   try {
     fs.mkdirSync(targetDir);
