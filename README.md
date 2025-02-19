@@ -55,7 +55,7 @@ npx react-easy-setup
 ### Manual setup
 
 ```base
-git clone https://github.com/akashpradhan-dev/react-quick-start
+git clone https://github.com/akashpradhan-dev/react-quick-start.git
 ```
 
 ## Commands

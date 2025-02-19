@@ -1,6 +1,6 @@
 {
   "name": "react-easy-setup",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "type": "module",
   "description": "A custom React project setup with Husky and ESLint for pre-commit hooks and code quality",
   "main": "index.js",
@@ -34,7 +34,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/akashpradhan-dev/react-husky-js"
+    "url": "https://github.com/akashpradhan-dev/react-quick-start"
   },
   "author": "Akash Pradhan",
   "license": "MIT"
