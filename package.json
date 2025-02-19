@@ -17,7 +17,12 @@
     "eslint-setup",
     "prettier-setup",
     "react-router",
-    "tailwind"
+    "tailwind",
+     "es6", 
+     "webpack", 
+     "starter kit", 
+     "minimal", 
+     "reacet-component"
   ],
   "bin": {
     "setup-react": "./bin/setup-react.js"

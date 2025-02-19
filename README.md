@@ -1,7 +1,7 @@
 # React Project Setup with React, React router, Tailwind, Husky, ESLint, Prettier, and Lint-staged
 
 ```bash
-npx react-quick-start
+npx react-easy-setup
 ```
 
 This is a custom React(vite) project setup that integrates **Husky** for Git hooks, **ESLint** for code linting, **Prettier** for code formatting, and **Lint-staged** for efficient linting and formatting on staged files only. This setup ensures high code quality and prevents poor-quality code from being committed to your repository.
@@ -15,6 +15,28 @@ This is a custom React(vite) project setup that integrates **Husky** for Git hoo
 - **Lint-staged**: Only runs linting and formatting on staged files to optimize your workflow.
 - **Pre-commit Hook**: Automatically runs linting and formatting tasks before committing code.
 
+## Features
+
+&nbsp; &nbsp; ✓ Language - [ES6+](http://babeljs.io/blog/2015/06/07/react-on-es6-plus/)<br>
+&nbsp; &nbsp; ✓ Styling - [Tailwind](http://sass-lang.com/)<br>
+&nbsp; &nbsp; ✓ React Router v7 - [React Router](https://reactrouter.com/start/library/installation)<br>
+&nbsp; &nbsp; ✓ Eslint - [Eslint](https://eslint.org/)<br>
+&nbsp; &nbsp; ✓ Husky - [Husky](https://typicode.github.io/husky/)<br>
+
+## Application Structure
+
+```bash
+├── dist/
+├── src/
+│   ├── assets/
+│   ├── components/
+│   ├── page/
+│   ├── router/
+│   └── index.html
+│   └── index.css
+└──package.json
+```
+
 ## Prerequisites
 
 Ensure you have the following tools installed on your system:
@@ -27,7 +49,7 @@ Ensure you have the following tools installed on your system:
 To set up the project automatically with all necessary configurations, run the following command:
 
 ```bash
-npx create-react-husky
+npx react-easy-setup
 ```
 
 ### Manual setup
