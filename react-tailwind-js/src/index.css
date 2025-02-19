@@ -1,0 +1,13 @@
+@import 'tailwindcss';
+
+/* Your custom variable */
+@theme {
+    --font-family-display: "Satoshi", "sans-serif";
+    --breakpoint-3xl: 1920px;
+    --color-neon-cyan: oklch(91.3% 0.139 195.8);
+    --font-size-headings: clamp(1.25rem, 4vw, 2rem);
+  }
+/* overide your size */
+  h1 { 
+    font-size: var(--font-size-headings)
+  }
