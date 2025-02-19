@@ -18,7 +18,7 @@ This is a custom React(vite) project setup that integrates **Husky** for Git hoo
 ## Features
 
 &nbsp; &nbsp; ✓ Language - [ES6+](http://babeljs.io/blog/2015/06/07/react-on-es6-plus/)<br>
-&nbsp; &nbsp; ✓ Styling - [Tailwind](http://sass-lang.com/)<br>
+&nbsp; &nbsp; ✓ Styling(CSS/Tailwindv4) - [Tailwind](http://sass-lang.com/)<br>
 &nbsp; &nbsp; ✓ React Router v7 - [React Router](https://reactrouter.com/start/library/installation)<br>
 &nbsp; &nbsp; ✓ Eslint - [Eslint](https://eslint.org/)<br>
 &nbsp; &nbsp; ✓ Husky - [Husky](https://typicode.github.io/husky/)<br>

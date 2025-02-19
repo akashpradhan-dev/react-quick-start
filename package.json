@@ -1,5 +1,5 @@
 {
-  "name": "react-quick-start",
+  "name": "react-easy-setup",
   "version": "2.0.0",
   "type": "module",
   "description": "A custom React project setup with Husky and ESLint for pre-commit hooks and code quality",
@@ -22,7 +22,9 @@
      "webpack", 
      "starter kit", 
      "minimal", 
-     "reacet-component"
+     "reacet-component",
+     "tailwindv4",
+     "tailwindv4setup"
   ],
   "bin": {
     "setup-react": "./bin/setup-react.js"
