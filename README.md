@@ -1,92 +1,82 @@
-# react-quick-start
+# React Project Setup with React, React router, Tailwind, Husky, ESLint, Prettier, and Lint-staged
 
-This project is a React application setup with React, React-router, ESLint, Prettier, and Husky for linting, code formatting, and pre-commit hooks.
+```bash
+npx react-quick-start
+```
+
+This is a custom React(vite) project setup that integrates **Husky** for Git hooks, **ESLint** for code linting, **Prettier** for code formatting, and **Lint-staged** for efficient linting and formatting on staged files only. This setup ensures high code quality and prevents poor-quality code from being committed to your repository.
 
 ## Features
 
-- **React**: Latest version of React for building user interfaces.
-- **Vite**: A fast build tool for development and production.
-- **React Router Dom**: latest version of React router dom.
-- **ESLint**: Linting to enforce code quality standards.
-- **Prettier**: Automated code formatting.
-- **Husky**: Git hooks to ensure code quality checks are applied before commits.
-- **Lint-Staged**: Runs linters on pre-committed files to optimize linting performance.
+- **React Project Setup**: Quickly set up a React(Vite) project with either JavaScript or TypeScript.
+- **Husky**: Automatically runs Git hooks (e.g., `pre-commit`) to ensure code quality before committing.
+- **ESLint**: Enforces coding standards and catches potential errors in your JavaScript or TypeScript code.
+- **Prettier**: Formats the code automatically to maintain consistent style.
+- **Lint-staged**: Only runs linting and formatting on staged files to optimize your workflow.
+- **Pre-commit Hook**: Automatically runs linting and formatting tasks before committing code.
 
-## Setup
+## Prerequisites
 
-Clone the repository to your local machine.
+Ensure you have the following tools installed on your system:
 
-```bash
-git clone https://github.com/akashpradhan-dev/react-husky-js.git
-cd react-husky-js
-```
+- **Node.js**: [Download Node.js](https://nodejs.org/)
+- **Git**: [Download Git](https://git-scm.com/)
 
-2. Install dependencies
-   Install the project dependencies using npm or yarn.
+## Quick Start (Automatic Setup via `npx`)
+
+To set up the project automatically with all necessary configurations, run the following command:
 
 ```bash
-npm install
-# or
-yarn install
+npx create-react-husky
 ```
 
-3. Start the development server
-   Start the development server using Vite.
+### Manual setup
 
-```bash
-npm run dev
-# or
-yarn dev
+```base
+git clone https://github.com/akashpradhan-dev/react-quick-start
 ```
 
-4. Check for format: Checks for any code formatting issues using Prettier.
+## Commands
 
-```bash
-npm run format
-# or
-yarn format
-```
-
-5. format:fix: Automatically formats the code using Prettier.
-
-```bash
-npm run format:fix
-# or
-yarn format:fix
-```
-
-6. lint: Checks for any linting issues using ESLint.
-
-```bash
-npm run lint
-# or
-yarn lint
-```
-
-7. lint:fix: Automatically fixes linting issues using ESLint.
+- Automatically fixes ESLint issues in your code
 
 ```bash
 npm run lint:fix
-# or
-yarn lint:fix
 ```
 
-8. husky: To check the husky working or not.
+- Check lint issues
 
 ```bash
-npx lint-staged
-# or
-yarn lint-staged
+npm run lint
 ```
 
-### Eslint Rules
+- Automatically fixes Prettier formatting issues in your code.
 
-if you want to add or remove any rules from eslint then you can do it from eslint.config.js file.
-
-- To ignore any file or folder from eslint then you can add it in ignor array in eslint.config.js file.
-
-```base
- { ignores: ['dist', 'dist/**', 'eslint.config.js', 'your path name'] },
+```bash
+npm run format:fix
 ```
 
-- for any query or issue you can contact me on linkedin click here(https://www.linkedin.com/in/akash-pradhan/)
+- Check format
+
+```bash
+npm run format
+```
+
+## Change configuration ESLint: add or disable rule in eslint.config.js file in the root of your project:
+
+```bash
+rules: {
+      ...js.configs.recommended.rules,
+      ...react.configs.recommended.rules,
+      ...react.configs['jsx-runtime'].rules,
+      ...reactHooks.configs.recommended.rules,
+      'react/jsx-no-target-blank': 'off',
+      'react-refresh/only-export-components': [
+        'warn',
+        { allowConstantExport: true },
+      ],
+      'react/prop-types': 'off',
+      'react/no-unknown-property': 'off',
+      //Add new rule here
+    },
+```

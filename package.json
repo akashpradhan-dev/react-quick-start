@@ -15,7 +15,9 @@
     "git-hooks",
     "code-quality",
     "eslint-setup",
-    "prettier-setup"
+    "prettier-setup",
+    "react-router",
+    "tailwind"
   ],
   "bin": {
     "setup-react": "./bin/setup-react.js"
