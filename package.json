@@ -1,0 +1,32 @@
+{
+  "name": "react-quick-start",
+  "version": "1.0.6",
+  "type": "module",
+  "description": "A custom React project setup with Husky and ESLint for pre-commit hooks and code quality",
+  "main": "index.js",
+  "keywords": [
+    "react",
+    "setup",
+    "eslint",
+    "husky",
+    "prettier",
+    "lint-staged",
+    "react-setup",
+    "git-hooks",
+    "code-quality",
+    "eslint-setup",
+    "prettier-setup"
+  ],
+  "bin": {
+    "setup-react": "./bin/setup-react.js"
+  },
+  "dependencies": {
+    "inquirer": "^12.4.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/akashpradhan-dev/react-husky-js"
+  },
+   "author": "Akash Pradhan",
+   "license": "MIT"
+}

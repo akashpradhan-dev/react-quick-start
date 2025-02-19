@@ -1,13 +1,12 @@
 # react-quick-start
 
-This project is a React application setup with React, React-router v7, Tailwind v4, ESLint(latest), Prettier, and Husky for linting, code formatting, and pre-commit hooks.
+This project is a React application setup with React, React-router, ESLint, Prettier, and Husky for linting, code formatting, and pre-commit hooks.
 
 ## Features
 
 - **React**: Latest version of React for building user interfaces.
 - **Vite**: A fast build tool for development and production.
 - **React Router Dom**: latest version of React router dom.
-- **TailwindCSS**: latest version of tailwind CSS (v4).
 - **ESLint**: Linting to enforce code quality standards.
 - **Prettier**: Automated code formatting.
 - **Husky**: Git hooks to ensure code quality checks are applied before commits.
@@ -18,7 +17,8 @@ This project is a React application setup with React, React-router v7, Tailwind 
 Clone the repository to your local machine.
 
 ```bash
-git clone https://github.com/akashpradhan-dev/react-quick-start.git
+git clone https://github.com/akashpradhan-dev/react-husky-js.git
+cd react-husky-js
 ```
 
 2. Install dependencies
