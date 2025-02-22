@@ -16,12 +16,13 @@ async function setupReactProject() {
       {
         name: "JavaScript + React-Router",
         value: "js-no-tailwind",
-        description: "Set up the project using JavaScript",
+        description: "Set up the project with CSS and React router",
       },
       {
-        name: "JavaScript + React-Router + tailwind v4",
+        name: "JavaScript + React-Router + tailwind v4 + Tanstack Query",
         value: "js-with-tailwind",
-        description: "Set up the project using TypeScript",
+        description:
+          "Set up the project with Tailwind, React router and Tanstack Query",
       },
     ],
   });
