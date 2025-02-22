@@ -1,4 +1,4 @@
-import { useUserQuery } from '../services/query/Example'
+import { useUserQuery } from "@/services/query/Example"
 
 export const About = () => {
   const { data } = useUserQuery()
