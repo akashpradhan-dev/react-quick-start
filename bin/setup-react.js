@@ -38,8 +38,6 @@ async function setupReactProject() {
 
   // Log the selected template directory before attempting to use it
   const selectedTemplateDir = templateDirs[template];
-  console.log(`Resolved template directory: ${selectedTemplateDir}`); // Log the resolved template directory
-
   if (!selectedTemplateDir) {
     console.error(`Invalid template selected: "${template}"`);
     return;
@@ -55,23 +53,23 @@ async function setupReactProject() {
   // Prompt user to input the project name (folder name)
   const projectName = await input({
     message: "Enter a name for your project folder:",
-    initial: "my-react-project", // Default project name
+    required:true
   });
 
   const targetDir = path.resolve(process.cwd(), projectName);
 
-  try {
-    if(!targetDir){
+  if (fs.existsSync(targetDir)) {
+    console.log(`The directory "${projectName}" already exists. Please choose a different name or delete the existing folder.`);
+    return; // Or ask the user for a new name
+  } else {
+    try {
+      fs.mkdirSync(targetDir);
+      console.log(`Creating the project in the "${projectName}" directory...`);
       execSync(`cp -r ${templatePath}/. ${targetDir}/`, { stdio: "inherit" });
       console.log("Project setup completed successfully!");
-      return
+    } catch (error) {
+      console.error("Error while setting up the React project:", error);
     }
-    fs.mkdirSync(targetDir);
-    // Copy template files from the selected template folder
-    execSync(`cp -r ${templatePath}/. ${targetDir}/`, { stdio: "inherit" });
-    console.log("Project setup completed successfully!");
-  } catch (error) {
-    console.error("Error while setting up the React project:", error);
   }
 }
 
