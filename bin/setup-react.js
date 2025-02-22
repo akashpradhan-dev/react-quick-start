@@ -61,6 +61,11 @@ async function setupReactProject() {
   const targetDir = path.resolve(process.cwd(), projectName);
 
   try {
+    if(!targetDir){
+      execSync(`cp -r ${templatePath}/. ${targetDir}/`, { stdio: "inherit" });
+      console.log("Project setup completed successfully!");
+      return
+    }
     fs.mkdirSync(targetDir);
     // Copy template files from the selected template folder
     execSync(`cp -r ${templatePath}/. ${targetDir}/`, { stdio: "inherit" });
