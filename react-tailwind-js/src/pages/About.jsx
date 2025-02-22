@@ -2,7 +2,6 @@ import { useUserQuery } from "@/services/query/Example"
 
 export const About = () => {
   const { data } = useUserQuery()
-  console.log(data)
 
   return (
     <div className="bg-black text-white flex justify-center items-center flex-col h-screen">
@@ -14,11 +13,11 @@ export const About = () => {
       <h3>EsLint Setup</h3>
       <h3>Husky</h3>
 
-      <div className="mt-6 border rounded-sm">
+      <div className="mt-6 border rounded-sm p-2">
         <h1>React Query Example User</h1>
 
         <ul>
-          {data.map(item => (
+          {data?.map(item => (
             <li key={item.id}>{item.name}</li>
           ))}
         </ul>
